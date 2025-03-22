@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>帮小青蛙挑选物品</title>
+    <style>
+      body
+      {
+      background-image:url(selectitems.png);
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-size:cover;
+      background-position:center center;
+      min-height: 100vh;
+      }
+          .container {
+            margin-top: 50px;
+          }
+
+          #myButton {
+              position: absolute;
+              top:60px;
+              left:480px;
+              padding: 0;
+              width: 300px;
+              height: 300px;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 0);
+          }
+          #myButton1 {
+              position: absolute;
+              top:64px;
+              left:815px;
+              padding: 0;
+              width: 310px;
+              height: 300px;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 0);
+          }
+          #myButton2 {
+              position: absolute;
+              top:370px;
+              left:480px;
+              padding: 0;
+              width: 300px;
+              height: 300px;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 0);
+          }
+          #myButton3 {
+              position: absolute;
+              top:365px;
+              left:825px;
+              padding: 0;
+              width: 300px;
+              height: 300px;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 0);
+          }
+
+          #buttonImage {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+          #buttonImage1 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+          #buttonImage2 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+          #buttonImage3 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+          #buttonImage4 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+
+          #myButton:hover #buttonImage {
+              transform: translateY(-10px);
+
+          }
+          #myButton1:hover #buttonImage1 {
+              transform: translateY(-10px);
+
+          }
+          #myButton2:hover #buttonImage2 {
+              transform: translateY(-10px);
+
+          }
+          #myButton3:hover #buttonImage3 {
+              transform: translateY(-10px);
+
+          }
+
+
+          #myButton:active #buttonImage {
+              transform: translateY(-5px) scale(0.95);
+          }
+          #myButton1:active #buttonImage1 {
+              transform: translateY(-5px) scale(0.95);
+          }
+          #myButton2:active #buttonImage2 {
+              transform: translateY(-5px) scale(0.95);
+          }
+          #myButton3:active #buttonImage3 {
+              transform: translateY(-5px) scale(0.95);
+          }
+
+      </style>
+  </head>
+
+  <body>
+      <div class="container">
+          <button id="myButton">
+              <img id="buttonImage" src="5.png">
+          </button>
+      </div>
+      <div class="container">
+          <button id="myButton1">
+              <img id="buttonImage1" src="6.png">
+          </button>
+      </div>
+      <div class="container">
+        <a href="乔琳雅第一次作业P4.html">
+          <button id="myButton2">
+              <img id="buttonImage2" src="7.png">
+            </a>
+          </button>
+      </div>
+      <div class="container">
+          <button id="myButton3">
+              <img id="buttonImage3" src="8.png">
+          </button>
+      </div>
+
+
+
+
+      <script>
+          const button = document.getElementById('myButton');
+          const button1 = document.getElementById('myButton1');
+          const button2 = document.getElementById('myButton2');
+          const button3 = document.getElementById('myButton3');
+
+          button.addEventListener('click', function() {
+              alert('雪花围巾？可能更适合在寒冷的旅途中使用哦～')});
+          button1.addEventListener('click', function() {
+              alert('比起用来在河边舀水喝的小竹筒，是不是有更需要的东西呢？')});
+          button2.addEventListener('click', function() {
+              alert('来自南方的水墨纸伞！刚好可以应对沿途会遇到的阴雨天～')});
+          button3.addEventListener('click', function() {
+              alert('可以用来装水的葫芦!唯一的缺点似乎是容量有点小......');
+          });
+      </script>
+  </body>
+
+  </html>

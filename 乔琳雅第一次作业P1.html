@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>来自蛙蛙的求助</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url('background1.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+
+        }
+
+
+        .button-container {
+            position: absolute;
+            transform: translateX(-50%);
+            width: max-content;
+            position: fixed;
+            top: 55vh;
+            left: 120vh;
+        }
+
+        #sayhi,
+        #ignore {
+            width: 180px;
+            height: 100px;
+            background-color: #BACFA2;
+            border: 7px solid #FFFFFF;
+            border-radius: 20px;
+            box-shadow: #2D3029 0px 8px 20px;
+            font-size: 30px;
+            color: #5A634B;
+            text-align: center;
+            margin: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        button:hover {
+            transform: translateY(-5px);
+            box-shadow: #2D3029 0px 12px 25px;
+        }
+
+        button:active {
+            transform: translateY(0);
+            box-shadow: #2D3029 0px 8px 20px;
+        }
+
+        #sayhi,
+        #ignore {
+            line-height: 85px;
+        }
+
+        p1 {
+            color: #FFFFFF;
+            margin: 10px 0;
+            position: fixed;
+            top: 35vh;
+            left: 92vh;
+        }
+
+        p2 {
+            color: #FFFFFF;
+            margin: 10px 0;
+            position: fixed;
+            top: 39vh;
+            left: 92vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p1>似乎有什么东西掉进了你的电脑...</p1>
+        <p2>要去看看吗?</p2>
+        <div class="button-container">
+            <a href="乔琳雅第一次作业P2.html">
+                <button id="sayhi" onclick="sayHello()">去看看</button>
+            </a>
+            <button id="ignore" onclick="ignore()">无视</button>
+        </div>
+    </div>
+
+    <script>
+        function sayHello() {
+            var response = prompt('你好...请问你是...?');
+            alert('你好...' + response + ', 我在旅行中突然遇到Bug掉到了这里..你可以帮我回家吗？(似乎是一只迷路的旅行青蛙在说话)')
+            const respondValue = response;
+            localStorage.setItem("respond", respondValue);
+        };
+
+        function ignore() {
+            alert("无视了求助...好像听到了小家伙的哭声，要不还是去看看？")
+        };
+    </script>
+</body>
+
+</html>

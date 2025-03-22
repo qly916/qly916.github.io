@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>小青蛙的告别</title>
+    <style>
+      body
+      {
+      background-image:url(bye.png);
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-size:cover;
+      background-position:center center;
+      min-height: 100vh;
+      }
+
+      p{
+        position:absolute;
+        font-size:30px;
+        top:80px;
+        left:600px;
+      color: #5A634B;
+
+      }
+      button {
+          width: 150px;
+          height: 60px;
+          background-color: #BACFA2;
+          border: 4px solid #FFFFFF;
+          border-radius: 20px;
+          box-shadow: #2D3029 0px 8px 20px;
+          font-size: 20px;
+          color: #5A634B;
+          text-align: center;
+          margin: 0 20px;
+          cursor: pointer;
+          transition: all 0.3s;
+          position:absolute;
+          top:160px;
+          left:670px;
+      }
+
+      button:hover {
+          transform: translateY(-5px);
+          box-shadow: #2D3029 0px 12px 25px;
+      }
+
+      button:active {
+          transform: translateY(0);
+          box-shadow: #2D3029 0px 8px 20px;
+      }
+
+      </style>
+  </head>
+  <body>
+  <p>谢谢你！那我要上路啦～</p>
+  <a href="乔琳雅第一次作业P5.html">
+  <button onclick="letter()">一路顺风～</button>
+  </a>
+  </body>
+  <script>
+  function letter() {
+      alert("几天后，收到了一封似乎是来自小青蛙的感谢信......")
+  };
+  </script>
+</html>

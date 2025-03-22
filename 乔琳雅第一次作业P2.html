@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>帮小青蛙挑选食物</title>
+    <style>
+      body
+      {
+      background-image:url(Pickfood.png);
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-size:cover;
+      background-position:center center;
+      min-height: 100vh;
+      }
+          .container {
+            margin-top: 50px;
+          }
+
+          #myButton {
+              position: absolute;
+              top:50px;
+              left:450px;
+              padding: 0;
+              width: 320px;
+              height: 320px;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 0);
+          }
+          #myButton1 {
+              position: absolute;
+              top:60px;
+              left:800px;
+              padding: 0;
+              width: 320px;
+              height: 320px;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 0);
+          }
+          #myButton2 {
+              position: absolute;
+              top:350px;
+              left:450px;
+              padding: 0;
+              width: 320px;
+              height: 320px;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 0);
+          }
+          #myButton3 {
+              position: absolute;
+              top:360px;
+              left:800px;
+              padding: 0;
+              width: 320px;
+              height: 320px;
+              border: none;
+              cursor: pointer;
+              overflow: hidden;
+              background: rgba(255, 255, 255, 0);
+          }
+
+          #buttonImage {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+          #buttonImage1 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+          #buttonImage2 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+          #buttonImage3 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+          #buttonImage4 {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: transform 0.3s ease;
+
+          }
+
+          #myButton:hover #buttonImage {
+              transform: translateY(-10px);
+
+          }
+          #myButton1:hover #buttonImage1 {
+              transform: translateY(-10px);
+
+          }
+          #myButton2:hover #buttonImage2 {
+              transform: translateY(-10px);
+
+          }
+          #myButton3:hover #buttonImage3 {
+              transform: translateY(-10px);
+
+          }
+
+
+          #myButton:active #buttonImage {
+              transform: translateY(-5px) scale(0.95);
+          }
+          #myButton1:active #buttonImage1 {
+              transform: translateY(-5px) scale(0.95);
+          }
+          #myButton2:active #buttonImage2 {
+              transform: translateY(-5px) scale(0.95);
+          }
+          #myButton3:active #buttonImage3 {
+              transform: translateY(-5px) scale(0.95);
+          }
+
+      </style>
+  </head>
+
+  <body>
+      <div class="container">
+          <button id="myButton">
+              <img id="buttonImage" src="1.png">
+          </button>
+      </div>
+      <div class="container">
+          <button id="myButton1">
+              <img id="buttonImage1" src="2.png">
+          </button>
+      </div>
+      <div class="container">
+          <button id="myButton2">
+              <img id="buttonImage2" src="3.png">
+          </button>
+      </div>
+      <div class="container">
+        <a href="乔琳雅第一次作业P3.html">
+          <button id="myButton3">
+              <img id="buttonImage3" src="4.png">
+          </button>
+        </a>
+      </div>
+
+
+
+
+      <script>
+          const button = document.getElementById('myButton');
+          const button1 = document.getElementById('myButton1');
+          const button2 = document.getElementById('myButton2');
+          const button3 = document.getElementById('myButton3');
+
+          button.addEventListener('click', function() {
+              alert('哇！美味的草莓可丽饼！但新鲜的草莓可能并不适合长途旅行，有没有更适合的呢？')});
+          button1.addEventListener('click', function() {
+              alert('暖融融的茄汁蛋包饭！但煎蛋似乎要在刚出锅的时候才最好吃，有没有什么更适合路上一直吃的呢？')});
+          button2.addEventListener('click', function() {
+              alert('好香的华夫饼！是小青蛙在家里最爱吃的小零食，但似乎不能在路途中饱餐一顿......')});
+          button3.addEventListener('click', function() {
+              alert('这很适合带在路上吃！烤馕可以保存很长时间，里面的干粮也能轻松让小青蛙饱餐n顿～');
+          });
+      </script>
+  </body>
+
+  </html>
